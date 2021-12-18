@@ -15,7 +15,7 @@ public class ListSample {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Student[] input = {
+        Student[] students = {
             new Student("Tom", 1, 88),
             new Student("Jane", 2, 80),
             new Student("Ray", 3, 70),
@@ -25,13 +25,13 @@ public class ListSample {
             new Student("Beth", 7, 90)
         };
         List<Student> studentList = new ArrayList<>();
-        for (Student s : input) {
+        for (Student s : students) {
             studentList.add(s);
         }
 
         //要素を探す
-        int k = Collections.binarySearch(studentList, input[3]);
-        System.out.println(input[3] + " is found at " + k);
+        int k = Collections.binarySearch(studentList, students[3]);
+        System.out.println(students[3] + " is found at " + k);
 
         //最大の要素を見つける
         Student best = Collections.max(studentList);
