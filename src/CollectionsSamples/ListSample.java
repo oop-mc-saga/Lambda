@@ -47,11 +47,11 @@ public class ListSample {
         //配列へ出力
         Student[] studentArray = new Student[studentList.size()];
         studentArray = studentList.toArray(studentArray);
-        for(Student s:studentArray){
+        for (Student s : studentArray) {
             System.out.println(s);
         }
         System.out.println("----------------");
-        
+
         //変更不可のビューを作る
         List<Student> view = Collections.unmodifiableList(studentList);
         try {
