@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lambdaSample;
 
 import common.Student;
@@ -34,11 +29,11 @@ public class SortSample {
             studentList.add(s);
         }
         //名前順に整列
-        Comparator<Student> comparator = 
-                (a,b)->a.name.compareTo(b.name);
+        Comparator<Student> comparator
+                = (a, b) -> a.name.compareTo(b.name);
         studentList.sort(comparator);
-        
+
         studentList.forEach(s -> System.out.println(s));
     }
-    
+
 }
