@@ -21,32 +21,32 @@ public class ArraysSample {
     }
 
     /**
-     * 配列からリストへ
+     * Convert array to list
      */
     public void convertList() {
-        System.out.println("---- 配列からリストへ -----------");
+        System.out.println("---- Convert array to list -----------");
         List<Integer> list = Arrays.asList(array);
         //要素を一つ変更
         int m = n / 2;
-        System.out.println(" リストの真ん中の値を0に ");
-        System.out.println("配列側も変更になることの確認");
+        System.out.println(" Set the middle of the list to 0 ");
+        System.out.println("Confirm the array also changed");
         list.set(m, 0);
-        for (int i = 0; i < n; i++) {//配列側も変更になることの確認
+        for (int i = 0; i < n; i++) {//Confirm the array also changed
             int x = array[i];
             int y = list.get(i);
             System.out.println(i + ": " + x + " " + y);
         }
-        //エラーになる
+        //the list is not allowed to modify
         // list.add(1);
     }
 
     /**
-     * 要素の探索
+     * Searching element
      * @param key 
      */
     public void search(int key) {
-        System.out.println("---- 要素の探索 ------");
-        System.out.println("探索する要素:"+key);
+        System.out.println("---- Searching element ------");
+        System.out.println("Searching :"+key);
         int k = Arrays.binarySearch(array, key,
                 (a, b) -> {
                     return a - b;
@@ -59,12 +59,12 @@ public class ArraysSample {
     }
 
     /**
-     * 配列コピー
+     * Copy array
      * @param m
      * @return 
      */
     public Integer[] newArray(int m) {
-        System.out.println("---- 配列の複写 -------");
+        System.out.println("---- Copy array -------");
         Integer array2[] = Arrays.copyOf(array, m * n);
         System.out.println("length of b is " + array2.length);
         System.out.println("後ろにランダムな値を追加");
@@ -85,7 +85,7 @@ public class ArraysSample {
         sys.search(n / 2);
         sys.search((n - 2) * (n - 2));
         Integer array2[] = sys.newArray(2);
-        //比較方法を指定した整列
+        //Sort by specifying compare method
         Arrays.sort(array2,
                 (a, b) -> {
                     return a - b;
