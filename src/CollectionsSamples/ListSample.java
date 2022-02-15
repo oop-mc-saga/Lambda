@@ -29,22 +29,22 @@ public class ListSample {
             studentList.add(s);
         }
 
-        //要素を探す
+        //Search element in list
         int k = Collections.binarySearch(studentList, students[3]);
         System.out.println(students[3] + " is found at " + k);
 
-        //最大の要素を見つける
+        //Find the maximum element
         Student best = Collections.max(studentList);
         System.out.println(best + " marks the best");
 
-        //整列
+        //Sort list
         System.out.println("sorted list");
         Collections.sort(studentList);
         studentList.forEach(
                 s -> System.out.println(s)
         );
         System.out.println("----------------");
-        //配列へ出力
+        //Copy list to array
         Student[] studentArray = new Student[studentList.size()];
         studentArray = studentList.toArray(studentArray);
         for (Student s : studentArray) {
@@ -52,12 +52,12 @@ public class ListSample {
         }
         System.out.println("----------------");
 
-        //変更不可のビューを作る
+        //Create immutable view of list
         List<Student> view = Collections.unmodifiableList(studentList);
         try {
             Collections.reverse(view);
         } catch (UnsupportedOperationException e) {
-            System.err.println("このリストは変更できない");
+            System.err.println("This list is immutable.");
         }
     }
 
