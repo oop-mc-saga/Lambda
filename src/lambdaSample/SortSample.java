@@ -28,7 +28,7 @@ public class SortSample {
         for (Student s : input) {
             studentList.add(s);
         }
-        //名前順に整列
+        //Sort data by ascending order of names
         Comparator<Student> comparator
                 = (a, b) -> a.name.compareTo(b.name);
         studentList.sort(comparator);

@@ -35,11 +35,11 @@ public class SecondSample {
         double sum=0.;
         for(Double d:list){ sum += d; }
          */
-        //和
+        //sum of list
         double sum = list.stream().reduce(0., (acc, _item) -> acc + _item);
-        //最大値
+        //the maximum of list
         double max = list.stream().max(Comparator.naturalOrder()).get();
-        //条件に合う要素の数 
+        //the number of data matching condition 
         int count = list.stream().filter(d -> (d > 0.5)).
                 map(d -> 1).reduce(0, Integer::sum);
     }
