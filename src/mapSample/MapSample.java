@@ -14,8 +14,8 @@ public class MapSample {
      */
     public static void main(String[] args) {
         String codes[] = {"CTS", "FUK", "HSG", "HND", "KIX"};
-        String names[] = {"新千歳空港", "福岡空港", "有明佐賀空港",
-            "羽田空港", "関西空港"};
+        String names[] = {"Sapporo (New Chitose)", "Fukuoka", "Ariake Saga",
+            "Haneda", "Kansai"};
 
         Map<String, String> airports = new HashMap<>();
         for (int i = 0; i < codes.length; i++) {
