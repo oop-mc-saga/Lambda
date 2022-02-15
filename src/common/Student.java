@@ -6,8 +6,8 @@ package common;
  */
 public class Student implements Comparable<Student>{
 
-    final public String name;//名前
-    final public int id;//番号
+    final public String name;
+    final public int id;
     protected int record;
 
     public Student(String name, int id, int record) {
