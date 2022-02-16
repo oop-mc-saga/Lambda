@@ -15,7 +15,7 @@ public class MiniTest {
 
     public static void main(String[] args) {
         Double d[]={1.,2.,3.};
-        double r = sumAll(Arrays.asList(d),x->x);
+        double r = sumAll(Arrays.asList(d),  );
         System.out.println(r);
     }
 
