@@ -2,6 +2,7 @@ package CollectionsSamples;
 
 import common.Student;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -25,9 +26,7 @@ public class ListSample {
             new Student("Beth", 7, 90)
         };
         List<Student> studentList = new ArrayList<>();
-        for (Student s : students) {
-            studentList.add(s);
-        }
+        studentList.addAll(Arrays.asList(students));
 
         //Search element in list
         int k = Collections.binarySearch(studentList, students[3]);

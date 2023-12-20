@@ -30,7 +30,7 @@ public class SimpleSample {
             inputList.add(i);
         }
         List<Integer> outputList = listOperation(inputList,
-                x -> x * x
+                x -> x * x + x
         );
         outputList.forEach(
                 x -> System.out.println(x)
