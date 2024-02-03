@@ -1,4 +1,4 @@
-package lambdaSample;
+package lambdaExamples;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author tadaki
  */
-public class SimplestSample {
+public class Simplest {
 
     /**
      * @param args the command line arguments

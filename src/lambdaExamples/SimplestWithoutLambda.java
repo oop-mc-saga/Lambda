@@ -1,4 +1,4 @@
-package lambdaSample;
+package lambdaExamples;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.function.Consumer;
  *
  * @author tadaki
  */
-public class SimplestSampleWithoutLambda {
+public class SimplestWithoutLambda {
 
     /**
      * @param args the command line arguments

@@ -1,4 +1,4 @@
-package arraysSample;
+package arraysExamples;
 
 import java.util.Arrays;
 import java.util.List;
@@ -7,12 +7,12 @@ import java.util.List;
  *
  * @author tadaki
  */
-public class ArraysSample {
+public class ArrayExample {
 
     final private int n;
     private final Integer array[];
 
-    public ArraysSample(int n) {
+    public ArrayExample(int n) {
         this.n = n;
         array = new Integer[n];
         for (int i = 0; i < n; i++) {
@@ -80,7 +80,7 @@ public class ArraysSample {
     public static void main(String[] args) {
         int n = 10;
         int key = n / 2;
-        ArraysSample sys = new ArraysSample(n);
+        ArrayExample sys = new ArrayExample(n);
         sys.convertList();
         sys.search(n / 2);
         sys.search((n - 2) * (n - 2));

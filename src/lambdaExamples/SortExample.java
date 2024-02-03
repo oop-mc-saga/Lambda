@@ -1,4 +1,4 @@
-package lambdaSample;
+package lambdaExamples;
 
 import common.Student;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author tadaki
  */
-public class SortSample {
+public class SortExample {
 
     /**
      * @param args the command line arguments

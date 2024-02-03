@@ -1,4 +1,4 @@
-package lambdaSample;
+package lambdaExamples;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -10,7 +10,7 @@ import java.util.Map;
  *
  * @author tadaki
  */
-public class SecondSample {
+public class StreamExamples {
 
     /**
      * @param args the command line arguments

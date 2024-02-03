@@ -1,4 +1,4 @@
-package mapSample;
+package mapExample;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.Map;
  *
  * @author tadaki
  */
-public class MapSample {
+public class MapExample {
 
     /**
      * @param args the command line arguments

@@ -1,4 +1,4 @@
-package lambdaSample;
+package lambdaExamples;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.function.IntFunction;
  *
  * @author tadaki
  */
-public class SimpleSample {
+public class SimpleLambdaUsage {
 
     public static List<Integer> listOperation(List<Integer> inputList,
             IntFunction<Integer> func) {
