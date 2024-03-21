@@ -8,6 +8,8 @@ For efficient uses of those collections, we need to be familiar with *lambda* ex
 - `ArrayExample.java`: Examples of arrays, and some related utilities.
 ## `common`
 - `Student.java`:  Common data sample implementing `Comparable`
+## `dequeExample`
+- `DequeExample.java`: Examples of queue and stack.
 ## `lambdaExamples`
 - `Simplest.java`: The simplest example of lambda expressions
 - `SimplestWithoutLambda.java`: The simplest example without lambda expressions
