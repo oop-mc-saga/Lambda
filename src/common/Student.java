@@ -1,5 +1,7 @@
 package common;
 
+import java.util.Objects;
+
 /**
  *
  * @author tadaki
@@ -38,4 +40,31 @@ public class Student implements Comparable<Student>{
         return difference;
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 71 * hash + Objects.hashCode(this.name);
+        hash = 71 * hash + this.id;
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Student other = (Student) obj;
+        if (this.id != other.id) {
+            return false;
+        }
+        return Objects.equals(this.name, other.name);
+    }
+
+    
 }
