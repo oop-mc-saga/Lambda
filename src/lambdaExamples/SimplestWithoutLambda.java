@@ -2,7 +2,6 @@ package lambdaExamples;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Consumer;
 
 /**
  *
@@ -19,14 +18,11 @@ public class SimplestWithoutLambda {
         for (int i = 0; i < n; i++) {
             list.add(Math.random());
         }
-        Consumer<Double> c = new Consumer<>(){
-            @Override
-            public void accept(Double d){
-                System.out.println(d);
-            }
-        };
+
         //print all elements
-        list.stream().forEach(c);
+        for(Double d:list){
+            System.out.println(d);
+        }
     }
 
 }
