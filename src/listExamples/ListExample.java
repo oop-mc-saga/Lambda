@@ -24,12 +24,11 @@ public class ListExample {
             new Student("Beth", 7, 90)
         };
         //Add all instances to a list
-        // List<Student> studentList = studentsToList(students);
         List<Student> studentList = new ArrayList<>();
         for (Student s : students) {
             studentList.add(s);
         }
-        //Add an instance at a specified position
+        //Insert an instance at a specified position
         studentList.set(3, new Student("Sam", 8, 80));
         
         //Find a specified element and remove it

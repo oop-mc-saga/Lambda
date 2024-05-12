@@ -10,13 +10,21 @@ import java.util.function.IntFunction;
  */
 public class SimpleLambdaUsage {
 
+    /**
+     * Return a list of integers obtained by applying a function to each element in the input list
+     * 
+     * @param inputList
+     * @param func
+     * @return
+     */
     public static List<Integer> listOperation(List<Integer> inputList,
             IntFunction<Integer> func) {
         List<Integer> outputList = new ArrayList<>();
         for (int i = 0; i < inputList.size(); i++) {
-            int input = inputList.get(i);
-            int output = func.apply(input);
-            outputList.add(output);
+            int data = inputList.get(i);
+            //apply the function to the data
+            int result = func.apply(data);
+            outputList.add(result);
         }
         return outputList;
     }
@@ -29,8 +37,9 @@ public class SimpleLambdaUsage {
         for (int i = 0; i < 5; i++) {
             inputList.add(i);
         }
+        //apply the function x->x*x to the input list
         List<Integer> outputList = listOperation(inputList,
-                x -> x * x + x
+                x -> x * x
         );
         outputList.forEach(
                 x -> System.out.println(x)

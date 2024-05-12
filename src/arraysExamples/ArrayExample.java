@@ -26,7 +26,7 @@ public class ArrayExample {
     public void convertList() {
         System.out.println("---- Convert array to list -----------");
         List<Integer> list = Arrays.asList(array);
-        //要素を一つ変更
+
         int m = n / 2;
         System.out.println(" Set the middle of the list to 0 ");
         System.out.println("Confirm the array also changed");
@@ -67,7 +67,7 @@ public class ArrayExample {
         System.out.println("---- Copy array -------");
         Integer array2[] = Arrays.copyOf(array, m * n);
         System.out.println("length of b is " + array2.length);
-        System.out.println("後ろにランダムな値を追加");
+        System.out.println("Add random values at the tail");
         for (int i = n; i < m * n; i++) {
             array2[i] = (int) (100 * Math.random());
         }
